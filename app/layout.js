@@ -1,10 +1,10 @@
-import {Inter} from "next/font/google"
+import { Inter } from "next/font/google"
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import Header from "@/components/header";
 import { ClerkProvider } from "@clerk/nextjs";
 
-const inter = Inter({subsets:["latin"]});
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "COACH : Creating Opportunities And Career Hope",
@@ -14,18 +14,18 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-    <html lang="en" suppressHydrationWarning> 
-      <body
-        className={`${inter.className}`}
-      >
-        <ThemeProvider
+      <html lang="en" suppressHydrationWarning>
+        <body
+          className={`${inter.className}`}
+        >
+          <ThemeProvider
             attribute="class"
             defaultTheme="dark"
             enableSystem
             disableTransitionOnChange
           >
             {/*header*/}
-            <Header/>
+            <Header />
             <main className="min-h-screen">{children}</main>
             {/*footer*/}
             <footer className="bg-muted/50 py-12">
@@ -36,9 +36,9 @@ export default function RootLayout({ children }) {
               </div>
             </footer>
           </ThemeProvider>
-          
-      </body>
-    </html>
+
+        </body>
+      </html>
     </ClerkProvider>
   );
 }
