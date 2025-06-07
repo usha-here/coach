@@ -8,6 +8,7 @@ export const testimonial = [
     company: "Tech Giant Co.",
   },
   {
+    
     quote:
       "The industry insights helped me pivot my career successfully. The salary data was spot-on!",
     author: "Michael Rodriguez",
