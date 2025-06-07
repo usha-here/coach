@@ -24,9 +24,6 @@ const HeroSection = () => {
 
 
   },[])
-
-
-
   return (
     <section className='w-full pt-36 md:pt-48 pb-10'>
       <div className='space-y-6 text-center'> 
