@@ -39,6 +39,7 @@ const HeroSection = () => {
             Advance your career with personalized guidance,interview perp, and 
             AI powered tools for job success.
           </p>
+          
         </div>
         <div className='flex justify-center space-x-4 '>
           <Link href="/dashboard">
