@@ -5,8 +5,13 @@ import React from 'react'
 import { Button } from './ui/button'
 import { ChevronDown, FileText, GraduationCap, LayoutDashboard, PenBox, StarsIcon } from 'lucide-react'
 import { DropdownMenu, DropdownMenuContent, DropdownMenuItem, DropdownMenuTrigger } from './ui/dropdown-menu'
+import { checkUser } from '@/lib/checkUser'
 
-const Header = () => {
+const Header = async() => {  //async function as in the server side we need to check if the user is logged in or not
+  
+  await checkUser();
+  // This function checks if the user is logged in and creates a new user record if not found in the database
+  
   return (
     <header className='fixed top-0 w-full border-b bg-background/80 backdrop-blur-md z-50 supports-[backdrop-filter]: bg-background/60'>
       <nav className='container h-19 flex items-center justify-between'>
