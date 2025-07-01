@@ -1,7 +1,7 @@
 import React from 'react'
 
 const MainLayout = ({children}) => {
-    // redirect user after login
+  //if user not onboarded then redirect them to onboarding page.
   return (
     <div className='container mx-auto mt-24 mb-20'>
       {children}
