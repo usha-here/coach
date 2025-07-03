@@ -1,10 +1,7 @@
-"use server";
+"use server";  //so that it runs on server side
 
 import { db } from "@/lib/prisma";
 import { auth } from "@clerk/nextjs/server";
-
-
-            //runs on server
             // API1
 export async function updateUser(data) {
     //first check if user is logged in or not
